@@ -1,0 +1,24 @@
+body{
+    font-family: "parkside", cursive;
+    font-weight: 300;
+    font-style: normal;
+    height: 100%;
+    font-size: 50px;
+    
+    
+    
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  
+
+}
+
+a{
+    text-decoration: none;
+    
+}

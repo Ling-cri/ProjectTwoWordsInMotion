@@ -1,0 +1,26 @@
+body{
+    font-family: "parkside", cursive;
+    font-weight: 300;
+    font-style: normal;
+    height: 100%;
+    font-size: 50px;
+    background-color: black;
+    color:white;
+    
+    
+}
+
+.center{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+a{
+    color: lightgoldenrodyellow;
+    text-decoration: none;
+    text-shadow: 0 0 3px lightgoldenrodyellow;
+
+}
