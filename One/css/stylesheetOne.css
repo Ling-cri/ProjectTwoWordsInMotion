@@ -1,0 +1,64 @@
+body{
+    font-family: "parkside", cursive;
+    font-weight: 300;
+    font-style: normal;
+    height: 100%;
+    font-size: 50px;
+    background-color: black;
+    
+    
+    
+}
+
+.center{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    height: 100vh;
+} 
+
+
+.up{
+   
+    position: relative;
+    animation-name: falldown;
+    animation-duration: 1s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+    
+
+}
+
+@keyframes falldown{
+    0% { color: black; top:0px;}
+    100%{color: khaki; top:50%}
+
+}
+
+.down {
+    color:black;  
+    text-decoration: none;
+    position: relative;
+    top:50%;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-delay:2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+
+
+
+@keyframes colorChange{
+    0%{ color: khaki; opacity: 0;}
+    60%{ color: khaki; opacity:100;}
+    100%{ color: white;}
+    
+}
+
+a:hover{
+    text-shadow: 0 0 8px white;
+
+}
+
+

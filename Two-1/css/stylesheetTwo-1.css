@@ -1,0 +1,79 @@
+body{
+    font-family: "parkside", cursive;
+    font-weight: 300;
+    font-style: normal;
+    height: 100vh;
+    font-size: 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.jump{
+    color:lightskyblue;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: space-between;
+    
+    
+}
+
+.jump span{
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease-in-out;
+
+}
+
+
+.jump:hover span{
+    color:orange;
+    animation: bounce 0.5s ease-in-out;
+
+}
+
+.jump span:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.jump span:nth-child(2) {
+    animation-delay: 0.1s;  
+}
+
+.jump span:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.jump span:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.jump span:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.jump span:nth-child(6) {
+    animation-delay: 0.5s;
+}
+.jump span:nth-child(7) {
+    animation-delay: 0.6s;
+}
+.jump span:nth-child(8) {
+    animation-delay: 0.7s;
+}
+
+@keyframes bounce{
+    0%{
+        transform: translateY(0);
+
+    }
+    50%{
+        transform: translateY(-10px);
+    }
+    100%{
+        transform: translateY(0);
+
+    }
+}
