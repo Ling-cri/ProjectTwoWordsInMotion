@@ -2,25 +2,65 @@ body{
     font-family: "parkside", cursive;
     font-weight: 300;
     font-style: normal;
-    height: 100%;
+    height: 100vh;
     font-size: 50px;
     background-color: black;
-    
-    
-    
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
 }
 
-.center{
+.link{
+    
+    color:khaki;
     display: flex;
     flex-direction:column;
     align-items: center;
-    height: 100vh;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
 } 
 
+.link .up{
+    display:block;
+    opacity:0;
+    transform:translateY(-500%);
+    animation: dropDown 1s forwards;
+}
 
-.up{
+.link .down{
+    display: block;
+  opacity: 0;
+  animation: fadeIn 1s forwards; 
+  animation-delay: 1s;
+
+}
+
+@keyframes dropDown {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+.link:hover .up,
+.link:hover .down{
+    color: white; 
+  text-shadow: 0 0 10px white, 0 0 20px white;
+
+}
+
+/*.up {
    
     position: relative;
+    text-decoration: none;
     animation-name: falldown;
     animation-duration: 1s;
     animation-delay: 1s;
@@ -36,29 +76,26 @@ body{
 }
 
 .down {
-    color:black;  
+     
     text-decoration: none;
     position: relative;
     top:50%;
-    animation-name: colorChange;
-    animation-duration: 2s;
-    animation-delay:2s;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
+    opacity: 0;
+    animation: fadein 2s forwards;
+    animation-delay: 3s;
 }
 
 
-
-@keyframes colorChange{
-    0%{ color: khaki; opacity: 0;}
-    60%{ color: khaki; opacity:100;}
-    100%{ color: white;}
-    
-}
-
-a:hover{
-    text-shadow: 0 0 8px white;
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 
 }
+
+
 
 
