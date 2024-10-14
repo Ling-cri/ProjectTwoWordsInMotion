@@ -1,36 +1,35 @@
 body{
-    font-family: "parkside", cursive;
-    font-weight: 300;
-    font-style: normal;
-    height: 100vh;
-    font-size: 50px;
-    background-color: black;
-    display:flex;
-    justify-content: center;
-    align-items: center;
+  font-family: "parkside", cursive;
+  font-weight: 300;
+  font-style: normal;
+  height: 100vh;
+  font-size: 50px;
+  background-color: black;
+  display:flex;
+  justify-content: center;
+  align-items: center;
    
 }
 
-.link{
-    
-    color:khaki;
-    display: flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    text-decoration: none;
+.link{ 
+  color:white;
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  text-decoration: none;
 } 
 
 .link .up{
-    display:block;
-    opacity:0;
-    transform:translateY(-500%);
-    animation: dropDown 1s forwards;
+  display:block;
+  opacity:0;
+  transform:translateY(-500%);
+  animation: dropDown 1s forwards;
 }
 
 .link .down{
-    display: block;
+  display: block;
   opacity: 0;
   animation: fadeIn 1s forwards; 
   animation-delay: 1s;
@@ -44,55 +43,17 @@ body{
     }
   }
   
-  @keyframes fadeIn {
+@keyframes fadeIn {
     to {
       opacity: 1;
     }
   }
 
+
 .link:hover .up,
 .link:hover .down{
-    color: white; 
-  text-shadow: 0 0 10px white, 0 0 20px white;
-
-}
-
-/*.up {
-   
-    position: relative;
-    text-decoration: none;
-    animation-name: falldown;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    
-
-}
-
-@keyframes falldown{
-    0% { color: black; top:0px;}
-    100%{color: khaki; top:50%}
-
-}
-
-.down {
-     
-    text-decoration: none;
-    position: relative;
-    top:50%;
-    opacity: 0;
-    animation: fadein 2s forwards;
-    animation-delay: 3s;
-}
-
-
-@keyframes fadein{
-    from{
-        opacity: 0;
-    }
-    to{
-        opacity: 1;
-    }
+  
+  text-shadow: 0 0 10px khaki, 0 0 20px khaki;
 
 }
 
