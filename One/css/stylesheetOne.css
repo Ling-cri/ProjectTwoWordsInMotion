@@ -8,55 +8,86 @@ body{
   display:flex;
   justify-content: center;
   align-items: center;
-   
+  animation:backgroundChange 3s forwards;
+  animation-delay: 3s;
 }
 
-.link{ 
-  color:white;
+@keyframes backgroundChange {
+  0% {backgound-color: black
+  }
+  90% {backgound-color: black
+  }
+  100% {background-color: white;}
+}
+
+.container{ 
+  
   display: flex;
   flex-direction:column;
   align-items: center;
   justify-content: center;
   position: relative;
-  text-decoration: none;
+  
 } 
 
-.link .up{
+.container .up{
+  color:white;
   display:block;
-  opacity:0;
-  transform:translateY(-500%);
-  animation: dropDown 1s forwards;
+  animation: dropDown 4s forwards;
 }
 
-.link .down{
-  display: block;
+.container .down{
+  color:cornflowerblue;
   opacity: 0;
-  animation: fadeIn 1s forwards; 
-  animation-delay: 1s;
+  display: block;
+  animation: fadeIn 5s forwards; 
+  animation-delay: 3s;
+
+}
+
+a{
+  color:orange;
+  text-decoration: none;
+}
+
+a:hover{
+  color:rgb(255, 207, 118);
+  
 
 }
 
 @keyframes dropDown {
-    to {
+    0%{
+      transform: translateY(-500%);
+      opacity: 0;
+    }
+    20% {
       transform: translateY(0);
       opacity: 1;
     }
-  }
+    50%{
+      transform: translateY(0);
+      opacity: 1;
+      text-shadow: 0 0 20px lightgoldenrodyellow;
+
+    }
+    60% {
+      transform: translateY(0);
+      opacity: 1;
+      text-shadow: 0 0 10px lightgoldenrodyellow;
+    }
+    100%{
+      transform: translateY(0);
+      opacity: 0;
+    }
+}
   
 @keyframes fadeIn {
-    to {
-      opacity: 1;
-    }
+  0%{
+    opacity: 0;
   }
-
-
-.link:hover .up,
-.link:hover .down{
-  
-  text-shadow: 0 0 10px khaki, 0 0 20px khaki;
-
+  100% {
+    opacity: 1;
+  }
 }
-
-
-
 

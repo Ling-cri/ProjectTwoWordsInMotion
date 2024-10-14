@@ -72,6 +72,10 @@ body{
     animation-delay: 0.7s;
 }
 
+.jump:active{
+    color:orange;
+}
+
 @keyframes bounce{
     0%{
         transform: translateY(0);

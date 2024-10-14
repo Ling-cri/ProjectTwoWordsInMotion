@@ -16,12 +16,10 @@ body{
 }
 
 @keyframes backgroundChange {
-    0% {backgound-color: black
+    0% {backgound-color: black;
     }
-
-    90% {backgound-color: black
+    90% {backgound-color: black;
     }
-
     100% {background-color: white;}
 }
 
@@ -56,7 +54,7 @@ body{
       }
       50% {
         opacity: 0;
-        transform: translateX(-100%);
+        transform: translateX(-200%);
       }
       100% {
         opacity: 0;
