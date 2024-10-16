@@ -9,6 +9,7 @@ body{
 }
 
 .center{
+    color:cornflowerblue;
     display: flex;
     flex-direction:column;
     justify-content: center;
@@ -16,7 +17,65 @@ body{
     height: 100vh;
 }
 
+.up{
+    color:orange;
+    Opacity:0;
+    animation-name:moveInOut;
+    animation-duration: 6s;
+    animation-fill-mode: forwards;
+}
+
+.link{
+    Opacity:0;
+    animation-name:moveIn;
+    animation-duration: 4s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+#down{
+    Opacity:0;
+    animation-name:moveInOut;
+    animation-duration: 6s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
 a{
+    color:black;
     text-decoration: none;
+    transition-duration:1s;
+    transition-timing-function: ease-in;
+    
     
 }
+
+a:hover{
+    color:white;
+    
+
+}
+
+@keyframes moveInOut{
+    0%{opacity:0;
+        transform: translateX(0%);
+    }
+    50%{opacity:1;
+        transform: translateX(0%);
+    }
+    
+    80%{opacity:1;
+        transform: translateX(-200%);
+    }
+    100%{opacity:0;
+        transform: translateX(-300%);
+    }
+
+}
+
+
+@keyframes moveIn{
+    to{opacity:1;
+    }
+}       
+

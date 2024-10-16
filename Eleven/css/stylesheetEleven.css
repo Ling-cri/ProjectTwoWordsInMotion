@@ -4,6 +4,7 @@ body{
     font-style: normal;
     height: 100%;
     font-size: 50px;
+    color:orange;
     
     
     
@@ -18,7 +19,23 @@ body{
 
 }
 
-a{
-    text-decoration: none;
-    
+.star{
+    animation-name: zoomIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+
+
+}
+
+@keyframes zoomIn{
+    from{
+        
+    }
+    to{
+        transform: rotate(720deg) scale(20) translate(-40%,0);
+    }
+
+
 }
