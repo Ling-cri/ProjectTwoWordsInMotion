@@ -3,7 +3,6 @@ body{
     font-weight: 300;
     font-style: normal;
     height:100%;
-    
     font-size: 50px;
     
 }
@@ -18,14 +17,55 @@ body{
     
 }
 
+.up{
+
+    Opacity:0;
+    animation-name:fadeIn;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeIn{
+
+    to{ opacity:1;}
+}
+
 .down{
+    font-size: 60px;
+    display: flex;
+    flex-direction: row;
+   
+}
+
+#one{
     opacity:0;
     animation-name: flyIn;
     animation-duration: 0.5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
+
+#two{
+    margin:0 10px;
+    opacity:0;
+    animation-name: flyIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+}
+
+#three{
+    opacity:0;
+    animation-name: flyIn;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+}
+
 
 @keyframes flyIn{
     from{
@@ -38,18 +78,6 @@ body{
     }
 }
 
-.down span :nth-child(1) {
-    animation-delay: 1s;
-}
-
-.down span :nth-child(2) {
-    animation-delay: 2s;  
-}
-
-.down span :nth-child(3) {
-    animation-delay: 3s;
-}
-
 a{
   color:orange;
   text-decoration: none;
@@ -57,6 +85,7 @@ a{
 }
 
 a:hover{
-    transform: scale(5);
-    
+    color:deepskyblue;
 }
+
+

@@ -6,17 +6,30 @@ body{
     font-size: 50px;
     background-color: black;
     color: white;
+}   
     
-    
-    
-}
 
 .center{
+    opacity: 0;
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-  
+    animation-name: scale;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes scale{
+    from{
+        transform:scale(3);
+        opacity:0;
+    }
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
 
 }
 
@@ -25,3 +38,10 @@ a{
     text-decoration: none;
     
 }
+
+a:hover{
+    color:orange;
+}
+
+
+   

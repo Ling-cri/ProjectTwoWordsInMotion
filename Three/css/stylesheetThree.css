@@ -84,6 +84,7 @@ a{
 }
 
 a:hover{
-    transform: scale(1.5);
+  font-size: 55px;
+  text-shadow: 0 0 5px #ffee10;
 
 }

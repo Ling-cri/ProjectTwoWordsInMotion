@@ -5,36 +5,61 @@ body{
     height: 100%;
     font-size: 50px;
     color:orange;
+    background-color: black;
+    animation:backgroundChange 2s forwards;
     
-    
-    
-}
+  }
+  
+  @keyframes backgroundChange {
+    0% {backgound-color: black
+    }
+
+    100% {background-color: white;}
+  }
+
 
 .center{
     display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
-  
+    opacity:0;
+    animation: fadeIn;
+    animation-duration: 3s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 
 }
 
+@keyframes fadeIn{
+ 0%{
+    opacity:0;
+ }
+ 80%{
+    opacity:1;
+ }
+ 100%{
+    opacity:0;
+ }
+}
+
+
 .star{
+    opacity: 1; !important
     animation-name: zoomIn;
     animation-duration: 2s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 8s;
 
 
 }
 
 @keyframes zoomIn{
-    from{
-        
-    }
+
     to{
-        transform: rotate(720deg) scale(20) translate(-40%,0);
+        transform: rotate(720deg) scale(15) translate(-40%,0);
     }
 
 

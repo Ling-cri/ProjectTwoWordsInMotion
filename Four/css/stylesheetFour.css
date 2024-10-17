@@ -42,7 +42,7 @@ body{
 }
 
 a{
-    color:black;
+    color:cornflowerblue;
     text-decoration: none;
     transition-duration:2s;
     transition-timing-function: ease-in;

@@ -37,9 +37,10 @@ body{
 }
 
 .container .down{
+
   color:cornflowerblue;
   opacity: 0;
-  display: block;
+  display: inline-block;
   animation: fadeIn 5s forwards; 
   animation-delay: 3s;
 
@@ -51,8 +52,8 @@ a{
 }
 
 a:hover{
-  color:rgb(255, 207, 118);
   
+  font-size: larger;
 
 }
 

@@ -27,12 +27,13 @@ body{
 }
 
 .down{
+
     opacity:0;
     animation-name:zoomOut;
     animation-duration: 1s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
-    animation-delay: 3s;
+    animation-delay: 2s;
 }
 
 @keyframes zoomOut{
@@ -54,7 +55,16 @@ a{
 }
 
 a:hover{
-    
-    font-weight: bolder;
+    background-color: orange;
+    color:white;
+    padding:5px;
+    border-radius: 15px;
+}
+
+a:active{
+    background-color: orange;
+    color:white;
+    padding:5px;
+    border-radius: 15px;
 
 }
