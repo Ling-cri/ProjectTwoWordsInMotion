@@ -1,8 +1,15 @@
+*{
+    
+    padding:0;
+    box-sizing: border-box;
+  }
+  
 body{
     font-family: "parkside", cursive;
     font-weight: 300;
     font-style: normal;
-    height: 100%;
+    width: 100%;
+    min-height: 100vh;
     font-size: 50px;
     background-color: black;
     color: white;
