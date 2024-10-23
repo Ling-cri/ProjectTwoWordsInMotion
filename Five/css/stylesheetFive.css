@@ -36,6 +36,8 @@
 .down{
 
     opacity:0;
+    display: flex;
+    flex-direction: row;
     animation-name:zoomOut;
     animation-duration: 1s;
     animation-timing-function: ease-out;
@@ -61,17 +63,27 @@ a{
     
 }
 
-a:hover{
-    background-color: orange;
-    color:white;
-    padding:5px;
-    border-radius: 15px;
+#zoomOut{
+    margin-left:10px;
 }
 
-a:active{
-    background-color: orange;
-    color:white;
-    padding:5px;
-    border-radius: 15px;
+#zoomOut:hover{
+    animation-name: scale;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
 
 }
+
+@keyframes scale{
+    from{
+        transform:scale(1);
+        opacity:1;
+    }
+    to{
+        transform:scale(3);
+        opacity:0.3;
+    }
+
+}
+

@@ -77,7 +77,7 @@ a{
     }
     to{
         transform:scale(3);
-        opacity:0;
+        opacity:0.3;
     }
 
 }

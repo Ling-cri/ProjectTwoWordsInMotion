@@ -12,6 +12,10 @@ body{
     min-height: 100vh;
     font-size: 50px;
     color:orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden;
     background-color: black;
     animation:backgroundChange 2s forwards;
     
@@ -27,57 +31,69 @@ body{
 
 .center{
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    position: relative;
+    
+
+}
+
+.up{
     opacity:0;
-    animation: fadeIn;
-    animation-duration: 3s;
+    position:absolute;
+    animation: fadeInOut;
+    animation-duration: 5s;
     animation-timing-function: ease-out;
     animation-fill-mode: forwards;
     animation-delay: 1s;
-
+  
 }
 
-@keyframes fadeIn{
+@keyframes fadeInOut{
  0%{
     opacity:0;
  }
- 100%{
+ 50%{
     opacity:1;
+ }
+ 70%{
+    opacity:1
+ }
+ 100%{
+    opacity:0;
  }
 }
 
-.star{
-    position:relative;
-    animation-name: scaleRotate;
-    animation-duration: 2s;
+p{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.credits{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    
+    opacity:0;
+    animation: fadeIn;
+    animation-duration: 3s;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    animation-delay: 4s;
-   
+    animation-delay: 5s;
 }
 
-@keyframes scaleRotate{
-    from{
-        transform:scale(1) rotate(0deg) translate(0, 0);
-
-    }
+@keyframes fadeIn{
     to{
-        transform:scale(15) rotate(720deg) translate(-40%, -10%);
+        opacity:1;
     }
-
-
 }
 
-p{
-    animation: fadeOut 1s forwards;
-    animation-delay:5s;
-}
-
-@keyframes fadeOut{
-to{
-    opacity:0;
-}
-
+a{
+    
+    color:cornflowerblue;
 }

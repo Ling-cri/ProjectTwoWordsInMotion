@@ -9,12 +9,13 @@ body{
   font-weight: 300;
   font-style: normal;
   width: 100%;
-  min-height: 100vh;
+  height: 100vh;
   font-size: 50px;
-  background-color: black;
-  display:flex;
-  justify-content: center;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  overflow:hidden;
+  background-color: black;
   animation:backgroundChange 3s forwards;
   animation-delay: 3s;
 }
@@ -27,29 +28,30 @@ body{
   100% {background-color: white;}
 }
 
-.container{ 
-  
-  display: flex;
-  flex-direction:column;
-  align-items: center;
-  justify-content: center;
+.container{
   position: relative;
-  
-} 
-
-.container .up{
-  color:white;
-  display:block;
-  animation: dropDown 4s forwards;
+  text-align: center;
 }
 
-.container .down{
+
+.up{
+  
+  color:white;
+  position:absolute;
+  white-space: nowrap;
+  display:block;
+  animation: dropDown 3s forwards;
+}
+
+.down{
+  display: flex;
+  flex-direction: row;
 
   color:cornflowerblue;
   opacity: 0;
   display: inline-block;
   animation: fadeIn 5s forwards; 
-  animation-delay: 3s;
+  animation-delay: 2s;
 
 }
 
@@ -58,31 +60,26 @@ a{
   text-decoration: none;
 }
 
-a:hover{
-  
-  font-size: larger;
-
-}
 
 @keyframes dropDown {
     0%{
-      transform: translateY(-500%);
+      transform: translateY(-500%) scale(2);
       opacity: 0;
     }
-    20% {
-      transform: translateY(0);
+    10% {
+      transform: translateY(0) scale(1);
       opacity: 1;
     }
     50%{
       transform: translateY(0);
       opacity: 1;
-      text-shadow: 0 0 20px lightgoldenrodyellow;
+      text-shadow: 0 0 10px lightgoldenrodyellow;
 
     }
     60% {
       transform: translateY(0);
       opacity: 1;
-      text-shadow: 0 0 10px lightgoldenrodyellow;
+      text-shadow: 0 0 0px lightgoldenrodyellow;
     }
     100%{
       transform: translateY(0);
@@ -99,3 +96,22 @@ a:hover{
   }
 }
 
+.zoomOut:hover{
+  animation-name: scale;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+
+
+}
+
+@keyframes scale{
+  from{
+      transform:scale(1);
+      opacity:1;
+  }
+  to{
+      transform:scale(3);
+      opacity:0.3;
+  }
+
+}
