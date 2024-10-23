@@ -35,6 +35,13 @@
     }
   }
   
+
+
+/* ---- following code adapted from:
+How to Create Jumping Text 3D Animation Effect using CSS ?
+https://www.geeksforgeeks.org/how-to-create-jumping-text-3d-animation-effect-using-css/
+---- */
+
 .jump span{
     display: inline-block;
     margin: 0 10px;
@@ -78,6 +85,8 @@
 .jump span:nth-child(8) {
     animation-delay: 0.7s;
 }
+
+/* ----- end cited code source ------- */
 
 .jump:active{
     color:orange;
