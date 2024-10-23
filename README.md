@@ -1,6 +1,9 @@
 # project 2: words in motion
 
-by Ling Zhou
+Poems by Nitya Chakrvesh & Erica Jong
+
+Create by Ling Zhou 
+
 
 October 20,2024
 
@@ -17,5 +20,9 @@ The programming languages used include HTML and CSS. Using the software Visual S
 
 ## acknowledgment
 
-I have referenced some tutorials from w3schools.com
+How to Create Jumping Text 3D Animation Effect using CSS ?
+
+https://www.geeksforgeeks.org/how-to-create-jumping-text-3d-animation-effect-using-css/
+
+
 
